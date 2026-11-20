@@ -4,369 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official portfolio of Fidele, a passionate drummer and musician.">
-    <title>Fidele | Drummer Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+    <title>Fidele Murengezi | Drummer & Programmer</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #101010;
-            color: white;
-            line-height: 1.6;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        /* Navigation */
-        header {
-            background: rgba(0, 0, 0, 0.95);
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            color: #ff4500;
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff4500;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 120px 10% 60px;
-            background:
-                linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlP4-JzBgyDUgRuTEGjEF-sLMNj85YHPCqWR7W5a0GIQ&s=10");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-content {
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 8vw, 75px);
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #ff4500;
-        }
-
-        .hero p {
-            font-size: 19px;
-            color: #ddd;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #ff4500;
-            color: white;
-            padding: 13px 28px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: white;
-            color: #ff4500;
-        }
-
-        /* General Sections */
-        section {
-            padding: 90px 10%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-        .section-title span {
-            color: #ff4500;
-        }
-
-        /* About */
-        .about {
-            background: #181818;
-            text-align: center;
-        }
-
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            color: #ccc;
-            font-size: 18px;
-        }
-
-        /* Skills */
-        .skills {
-            background: #101010;
-        }
-
-        .skill-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-        }
-
-        .skill-card {
-            background: #202020;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
-            border-bottom: 3px solid #ff4500;
-            transition: 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-8px);
-        }
-
-        .skill-card h3 {
-            color: #ff4500;
-            margin-bottom: 10px;
-        }
-
-        /* Performances */
-        .performances {
-            background: #181818;
-            text-align: center;
-        }
-
-        .performances p {
-            color: #ccc;
-            font-size: 18px;
-        }
-
-        /* Contact */
-        .contact {
-            background: #101010;
-            text-align: center;
-        }
-
-        .contact p {
-            margin: 12px 0;
-            color: #ddd;
-            font-size: 18px;
-        }
-
-        .contact a {
-            color: #ff4500;
-            text-decoration: none;
-        }
-
-        .social {
-            margin-top: 25px;
-        }
-
-        .social a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 25px;
-            border: 1px solid #ff4500;
-            border-radius: 5px;
-        }
-
-        .social a:hover {
-            background: #ff4500;
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background: black;
-            padding: 25px;
-            text-align: center;
-            color: #aaa;
-        }
-
-        footer span {
-            color: #ff4500;
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-                padding: 15px 5%;
-            }
-
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0;
-                font-size: 13px;
-            }
-
-            section {
-                padding: 75px 6%;
-            }
-
-            .hero {
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <div class="logo">FIDELE.</div>
+<!-- NAVIGATION -->
+<header>
+    <a href="#home" class="logo">Fidele<span>.</span></a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#performances">Performances</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- Home -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>FEEL THE <span>RHYTHM deledrummer.</span></h1>
-            <p>
-                Hello, I'm Fidele, also known as Fidele the Drummer.
-                Music is my passion, and the drums are my voice with mixing with the music production.
-                I bring energy, creativity and rhythm to every performance and song.
-            </p>
+<!-- HOME SECTION -->
+<section class="home" id="home">
 
-            <a href="#about" class="btn">Discover My Journey</a>
-        </div>
-    </section>
+    <div class="home-content">
+        <h3>Hello, Welcome to My Portfolio</h3>
 
-    <!-- About -->
-    <section class="about" id="about">
-        <h2 class="section-title">ABOUT <span>ME</span></h2>
+        <h1>I'm <span>Fidele Murengezi</span></h1>
+
+        <h3>Drummer | Musician | Programmer</h3>
 
         <p>
-            My name is Fidele MURENGEZI,i developed well my telent from
-            the great school called AGAHOZO SHALOM YOUTH VILLAGE(ASYV)
-            and now I am a passionate drummer and musician.
-            I enjoy creating rhythms, performing with other musicians,
-            and sharing the power of music with people.
-            Through dedication, practice and teamwork, I continue
-            developing my musical talent and exploring new opportunities.
+            I am passionate about music, creativity and technology.
+            I enjoy playing drums, guitar and piano, while exploring
+            the world of programming.
         </p>
-    </section>
 
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <h2 class="section-title">MY <span>SKILLS</span></h2>
+        <a href="#about" class="btn">Discover More</a>
 
-        <div class="skill-container">
+        <div class="social-links">
+            <a href="https://www.instagram.com/fidele_the_drummer/"
+               target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
 
-            <div class="skill-card">
-                <h3>Drumming</h3>
-                <p>Creating powerful and exciting rhythms.</p>
-            </div>
+</section>
 
-            <div class="skill-card">
+<!-- ABOUT ME -->
+<section class="about" id="about">
+
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-content">
+
+        <h3>Musician, Drummer & Programmer</h3>
+
+        <p>
+            My name is Fidele Murengezi. I am a passionate
+            musician and technology enthusiast with a strong
+            interest in creativity, learning and personal development.
+
+            I completed my Ordinary Level studies at GS Ntanza B
+            and continued my Advanced Level education at
+            Agahozo-Shalom Youth Village (ASYV).
+
+            During my Advanced Level studies, I developed my
+            musical abilities and learned to play different
+            musical instruments, including the guitar and piano.
+            I also improved my drumming skills and developed
+            a deeper understanding of rhythm and music.
+
+            Apart from music, I am interested in programming
+            and technology. I enjoy creating websites, learning
+            programming languages and exploring how technology
+            can solve real-world problems.
+
+            I believe in continuous learning, teamwork,
+            discipline and using my talents to inspire others.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <i class="fas fa-drum"></i>
+            <h3>Drumming Techniques</h3>
+            <p>Playing drums with rhythm, energy and creativity.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-music"></i>
+            <h3>Guitar Playing</h3>
+            <p>Playing guitar and developing musical skills.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-keyboard"></i>
+            <h3>Piano Playing</h3>
+            <p>Playing piano and exploring musical melodies.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Programming</h3>
+            <p>Creating websites and learning programming technologies.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-sliders-h"></i>
+            <h3>Music Production</h3>
+            <p>Exploring music production and sound creativity.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-microphone"></i>
+            <h3>Singing</h3>
+            <p>Developing musical expression through singing.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DRUMMER IMAGE GALLERY -->
+<section class="drummer-gallery" id="gallery">
+
+    <h2 class="heading">My <span>Drumming</span> Gallery</h2>
+
+    <p class="gallery-description">
+        Capturing my passion, performances and journey as a drummer.
+    </p>
+
+    <div class="gallery-container">
+
+        <div class="gallery-card">
+            <img src="images/drummer1.jpg" alt="Drummer performing on stage">
+            <div class="gallery-info">
                 <h3>Live Performance</h3>
-                <p>Performing music in front of audiences and on the big stages.</p>
+                <p>Expressing music through rhythm.</p>
             </div>
-
-            <div class="skill-card">
-                <h3>Music production</h3>
-                <p>Working with musicians to create great music.</p>
-            </div>
-
-     
-
         </div>
-    </section>
 
-    <!-- Performances -->
-    <section class="performances" id="performances">
-        <h2 class="section-title">MY <span>PERFORMANCES</span></h2>
+        <div class="gallery-card">
+            <img src="images/drummer2.jpg" alt="Drummer playing drums">
+            <div class="gallery-info">
+                <h3>Drumming Skills</h3>
+                <p>Practice, discipline and creativity.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/drummer3.jpg" alt="Drummer in music studio">
+            <div class="gallery-info">
+                <h3>Studio Sessions</h3>
+                <p>Creating music with passion.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/drummer4.jpg" alt="Drummer performing with band">
+            <div class="gallery-info">
+                <h3>Band Performance</h3>
+                <p>Sharing music with other musicians.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <p>
+        Thank you for visiting my portfolio.
+        Feel free to connect with me.
+    </p>
+
+    <div class="contact-info">
 
         <p>
-        Every performance is more than just a show—it is an opportunity to share my deepest passion, 
-     sharpen my skills, and push my artistry to the next level.
-     Stepping onto the stage allows me to build genuine camaraderie with fellow musicians and other bands while creating a powerful,
-            lasting bond with music lovers through the shared energy of live sound.
+            <i class="fas fa-envelope"></i>
+            murengezifidele4@gmail.com
         </p>
 
-        <br>
-
         <p>
-            More performance photos and videos will be added here.
-        </p>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <h2 class="section-title">GET IN <span>TOUCH</span></h2>
-
-        <p>Interested in working together or booking a performance?</p>
-
-        <p>
-            Email:
-            <a href="mailto:murengezifidele4@gmail.com">
-                murengezifidele4@gmail.com
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/fidele_the_drummer/"
+               target="_blank" rel="noopener noreferrer">
+                @fidele_the_drummer
             </a>
         </p>
 
-        <div class="social">
-       <a href="https://www.instagram.com/fidele_the_drummer/"
-   target="_blank" rel="noopener noreferrer">
-    Instagram
-</a>
+    </div>
 
-            <a href="mailto:murengezifidele4@gmail.com">
-                Send Me an Email
-            </a>
-        </div>
-    </section>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            <span>Fidele the Drummer</span>.
-         
-        </p>
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 Fidele Murengezi.
+        All Rights Reserved.
+    </p>
+</footer>
 
 </body>
 </html>
